@@ -49,7 +49,7 @@ public class Pedido {
             return;
         }
         System.out.println(
-            this.itens[i].getProduto().getNome() + " " + this.itens[i].getQuantidade()
+            this.itens[i].getProduto().getNome() + ": " + this.itens[i].getQuantidade() + " und"
         );
         exibirItens(i+1);
     }
