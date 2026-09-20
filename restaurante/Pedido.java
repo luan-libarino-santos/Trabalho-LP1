@@ -44,4 +44,13 @@ public class Pedido {
     public boolean isAtivo() {
         return this.ativo;
     }
+    public void exibirItens(int i) {
+        if (i >= this.quantidadeItens) {
+            return;
+        }
+        System.out.println(
+            this.itens[i].getProduto().getNome() + " " + this.itens[i].getQuantidade()
+        );
+        exibirItens(i+1);
+    }
 }
